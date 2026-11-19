@@ -1,6 +1,6 @@
 # 🐔 Chicken Run — Temple Escape Edition
 
-A playable **2.5D pseudo-3D endless runner** built with pure **Frontend (HTML5, CSS3, Vanilla JavaScript)** and a **Core Java backend** using `com.sun.net.httpserver.HttpServer`.
+A playable **2.5D pseudo-3D endless runner** built with pure **Frontend (HTML5, CSS3, JavaScript, React)** and a **Core Java backend** using `com.sun.net.httpserver.HttpServer`.
 
 **Zero external dependencies, frameworks, or databases** — high scores are stored and managed exclusively in **in-memory Java Arrays** (`ScoreRecord[]`) with array insertion-sort logic.
 
@@ -8,9 +8,9 @@ A playable **2.5D pseudo-3D endless runner** built with pure **Frontend (HTML5, 
 
 ## 🌟 Key Highlights & Features
 
-### 1. 🎨 Frontend (HTML5, CSS3, JavaScript)
+### 1. 🎨 Frontend (HTML5, CSS3, JavaScript, React)
 
-- **Pure Native Stack**: No React, Vite, Webpack, or Node.js required. Runs directly in any web browser or served through the Java server.
+- **Pure Native Stack**: React, Vite required. Runs directly in any web browser or served through the Java server.
 - **2.5D Pseudo-3D Perspective**: Moving cobblestone road with lane markers, atmospheric parallax sky, ancient temple pyramids, jungle mountains, and roadside torch-lit stone pillars.
 - **Procedural Animated Chicken**:
   - Running leg cycle and foot stride.
