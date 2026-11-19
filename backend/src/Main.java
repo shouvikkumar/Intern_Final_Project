@@ -11,32 +11,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.Executors;
 
-/**
- * ============================================================================
- * Chicken Run — Temple Run Edition (Core Java Backend)
- * ----------------------------------------------------------------------------
- * Technology: Pure Core Java (Standard Library Only)
- * Database:   In-Memory Java Array (No external database, no Spring Boot)
- * HTTP Engine: com.sun.net.httpserver.HttpServer
- * ============================================================================
- */
 public class Main {
     private static int activePort = 8080;
 
-    // ========================================================================
-    // DATABASE SIMULATION: PURE JAVA ARRAY STORAGE
-    // ========================================================================
-    // Requirements: "database only array"
-    // We use a fixed-size array of ScoreRecord objects with insertion-sort logic.
-    // ========================================================================
+
+
     private static final int MAX_CAPACITY = 50;
     private static final ScoreRecord[] scoreDatabase = new ScoreRecord[MAX_CAPACITY];
     private static int totalRecords = 0;
     private static final Object DB_LOCK = new Object();
 
-    /**
-     * Record representing a single player score entry stored in the array.
-     */
     static class ScoreRecord {
         String player;
         int score;
